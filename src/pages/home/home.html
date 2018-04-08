@@ -1,17 +1,20 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>ARCONS Vendors List</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-item>
+    <ion-label fixed>Search For Vendor</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="search" (keyup)="searchVendor()"></ion-input>
+  </ion-item>
+  <ion-list>
+    <button ion-item *ngFor="let vendor of vendors" (click)="openNavDetailsPage(vendor)">
+      {{ vendor.company }}
+      <ion-note item-end>
+       {{ vendor.category }}
+      </ion-note>
+    </button>
+  </ion-list>
 </ion-content>
