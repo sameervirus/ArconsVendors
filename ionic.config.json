@@ -1,0 +1,8 @@
+{
+  "name": "ArconsVendors",
+  "app_id": "24907bc4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
