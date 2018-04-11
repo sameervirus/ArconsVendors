@@ -8,8 +8,8 @@ import { VendorDetails } from '../models/vendors.model';
 @Injectable()
 export class VendorServiceService {
   private headers = new Headers({'Content-Type': 'application/json'});
-  //private vendorUrl = 'http://arconsegypt.com/vendors/vendorapi.php';
-  private vendorUrl = 'http://localhost/arcons-vendors3/vendorapi.php';
+  private vendorUrl = 'http://arconsegypt.com/vendors/vendorapi.php';
+  //private vendorUrl = 'http://localhost/arcons-vendors3/vendorapi.php';
   Vendor: VendorDetails;
 
 
